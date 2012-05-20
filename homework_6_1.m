@@ -1,0 +1,17 @@
+A=7
+A_A=3/A
+A_B=3/A
+A_C=1/A
+UNITY=A_A+A_B+A_C
+
+B=4
+B_A=0/B
+B_B=1/B
+B_C=3/B
+UNITY=B_A+B_B+B_C
+
+C=4
+C_A=1/C
+C_B=0/C
+C_C=3/C
+UNITY=C_A+C_B+C_C

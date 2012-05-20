@@ -1,0 +1,9 @@
+see 13.19 Reduce Branching factor
+
+expanding left to right, 
+
+first set of nodes, the minimal value is 4 (and at this point, the max is 4)
+
+second set of nodes, we look at 5 (>4) but upon seing 2, we know that the max won't use this node...
+
+third set of nodes, we see 1 and forgo the rest.

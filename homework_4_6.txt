@@ -1,0 +1,20 @@
+(c=X)=>poss(dial(c),s)
+if c is the correct combination, it's possible to dial it
+(0000<=c<=9999)=>poss(dial(c),s)
+if c is a combination, it's possible to dial it.
+
+both are true, always possible to dial any number
+
+open(s)=>poss(lock, s)
+!open(s)=>poss(lock(s)
+true=>poss(lock(s))
+
+the first two are equivalent to the third: always possible to open.  All correct.
+ 
+poss(s,a)=>(open(result(s,a))<=>(a=dial(X)||(open(s)^a!=lock)))
+
+could already be opened...
+
+poss(s,a)=>(open(result(s,a))<=>(a=dial(x)^a!=lock)
+
+redundant right part

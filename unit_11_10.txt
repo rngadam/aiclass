@@ -1,0 +1,11 @@
+P(R0)=0
+out of sunny: 8
+out of rain: 2
+6 S->S
+2 S->R
+1 R->R
+1 R->S
+P(S|S)=6/8
+P(R|S)=2/8
+P(S|R)=1/2
+P(R|R)=1/2

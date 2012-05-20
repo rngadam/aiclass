@@ -1,0 +1,9 @@
+At the start, we don't know if we are left or right.
+
+So we position ourselves to the right; maybe we were already there, but it doesn't matter as we want to position ourselves.
+
+We suck dirt there (don't know if there is dirt or not)
+
+We go left and suck again.
+
+We are now certain to be at the left square and have sucked both the right and left square clean

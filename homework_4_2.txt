@@ -1,0 +1,31 @@
+1) Paris and Nice are in France
+
+1a) In(Paris^Nice, France)
+
+Not legitimate: cities are not booleans
+
+1b) In(Paris, France) ^ In(Nice, France)
+
+Correct
+
+2) There is a country that borders Iran and Syria
+
+2a)Ec C(c) ^ B(c, Iran) ^ B(c, Syria)
+
+Correct
+
+2b) Ec C(c) => (B(c, Iran) ^ B(c, Syria)
+
+"if it's a country then it should border Iran and Syria)"
+
+Incorrect
+
+3) No two bordering countries can have the same map color
+
+3a) Ax,y C(x)^C(y)^B(x,y)) => !(MC(x)=MC(y))
+
+Correct: There is a x,y that if are countries and bordering must not have a color that is equal
+
+3b) Ax,y !C(x)||!C(y)||!B(x,y)||!(MC(x)=MC(y))
+
+Incorrect: There is an x,y where x or y are not countries or not bordeing or the color is not equal.

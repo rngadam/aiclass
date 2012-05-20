@@ -1,0 +1,33 @@
+Markov hidden markers
+Eigen values
+Free linear algebra: http://joshua.smcvt.edu/linearalgebra/
+Resolving linear equations systems (n equations with n variables)
+R^0: one point
+R^1: axis
+R^2: euclidean plane
+R^3: 3d space
+Markov chains: system with n states (state machine with probabilities to move from state to state)
+States: noun, verb, adjective, adverbs, interjections
+sum of all probabilities of states transition is 1
+questions that can be asked: what happens in 2 states from now? are there stable distributions?
+Probability distribution
+
+Commercial 3d printer from Smithsonian: find a way to do it cheap
+50$ to be member, 24 hours access to the space, people get voted in
+
+Chad
+
+The Baltimore Node space is a 1700 square feets space with great windows three blocks from the Baltimore Penn station. The rent is 1000$USD monthly. The space has existed for 2 years and has between 25 and 30 paying members (50$ per month). OpenHack night weekly has a dozen people doing their projects in the space. The space has homemade work tables and shelves, sofas, microwave, fridge, a full complement of mechanical tools, 3d printer (working!), a foosball table.
+
+Todd from inceptiontops.com had us visit the Baltimore Node hackerspace. He's a mechanical engineer who's been doing 3d design for 15 years... He left his job 6 months ago to dedicate himself to do products that he ships all around the country. Among other things, he sells spinning tops as can be seen in the movie Inception. It takes about one month to get these spinning shapes and so far he's sold 700 of them. He does a wide variety of things such as necklaces and rings from movies. He has built an "Holocron", an object from the deleted scenes of Star Wars. He's also behind an "Han Solo in carbonite" replica. Lots of the smaller parts are made possible by using shapeways.com, a company that specializes in turning 3d CAD shapes into actual real objects in a variety of material (silver, gold-plated, etc). Although he favors Autocad, he sees a big future in web-browser  CAD software such as 3dtin.com. He's really inspired by software generated designs such as those produced by n-e-r-v-o-u-s.com and blog.virtox.net
+
+We also met the owner of the building loadoffun.net, Sherwin.  Load of fun is a building with art studios, art gallery, exchanges, theaters, etc. The space has been running for 6 years, much longer than even Sherwin was planning on. Sherwin is very interested in building a LED display on the roof similar to blinkenlights.net.
+
+
+autocad sculpt 123
+3dtin
+nervous systems
+tinkercad
+optical customizable glasses
+shapeways
+

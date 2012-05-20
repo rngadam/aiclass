@@ -1,0 +1,7 @@
+"It is intentional for the bananas to remain high."
+
+So at the end height(bananas, high) must be false.
+
+And the monkey has no banana, because although we provide for the monkey having the banana when grasping it, we don't track  when he climbs down.
+
+Both the monkey and bananas are At(B), but not at the same height.

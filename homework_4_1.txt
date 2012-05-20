@@ -1,0 +1,46 @@
+4.1
+
+(smoke => fire) <=> (smoke || !fire)
+
+T,T=true<=>true
+T,F=false<=>true
+F,T=true<=>false
+F,F=true<=>true
+
+true in some cases (such as smoke=false, fire=false)
+false in the case of smoke=true, fire=false where parenthesis will be true will right will be false
+
+(smoke => fire) <=> (!smoke => !fire)
+
+T,T=true<=>true
+T,F=false<=>true
+F,T=true<=>false
+F,F=true<=>true
+
+false in some cases (such as smoke=true, fire=false)
+true in the case of true,true
+
+(smoke => fire) <=> (!fire => !smoke)
+
+T,T=true<=>true
+T,F=false<=>false
+F,T=true<=>true
+F,F=true<=>true
+
+true in all cases
+
+(big || dumb) || (big => dumb)
+T,T=true||true
+T,F=true||false
+F,T=true||true
+F,F=false||true
+
+true in all cases
+
+(big && dumb) <=> (!big || !dumb)
+T,T=true<=>false
+T,F=false<=>true
+F,T=false<=>true
+F,F=false<=>true
+
+false in all cases

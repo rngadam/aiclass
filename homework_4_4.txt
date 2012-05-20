@@ -1,0 +1,19 @@
+4.4a
+
+We know left is clean. move to right might have failed so we retain 5,7.
+
+If the move to the right is successful, then we are in the right square and the tile is dirty or not.
+
+However, dirt might also have spontaneously appeared in all cases... so all squares are valid...
+
+4.4b
+
+every square where the robot is right and the tile is dirty... 2 and 6... also answered in the next question!
+
+4.4c
+
+suck is guaranteed to clean up this tile. every tile that has the robot on the right-side in a clean square (4 and 8)
+
+4.4d
+
+same result as 4.4c

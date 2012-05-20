@@ -1,0 +1,9 @@
+x=0
+y=0
+theta=0
+v = 10
+w = pi/8
+dt = 4 
+x = 4*(v*dt*cos(theta))
+y = 4*(v*dt*sin(theta))
+theta = 4*(w*dt)

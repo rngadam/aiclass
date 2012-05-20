@@ -1,0 +1,247 @@
+= QUESTION 2 = 
+
+A* Start Search: see unit 2.22
+
+Admissible: unit 2.27
+
+f = g + h
+
+21, 18, 17, 16, 20
+
+21, 18, 17, 16#2(25,40), 20
+
+21, 18, 17#3(), 16(25,40), 20
+
+21, 18#4(23, 29), 17(), 16(25,40), 20
+
+21, 18(23, 29), 17(), 16(25,40), 20#5(20)
+
+21, 18(23, 29), 17(), 16(25,40), 20#5(20#6())
+
+h(s) <= TRUE COST
+
+we have three h values to path:
+
+h=6 <= 20 (two steps away)
+h=20 > 10 (one step away!) -> overestimates!
+h=10 <= 20 (one step away)
+
+= QUESTION 3 =
+
+P(head) = 0.3
+P(tail) = 1 - P(head) = 0.7
+
+= QUESTION 4 =
+
+ph*ph=0.04
+ph=0.2
+
+pt=1-ph=0.8
+
+pt*pt=0.64
+
+= QUESTION 5 =
+
+p1(h)=0.5
+p2(h)=1
+
+heads come out once:
+
+0.5*0.5=0.25
+0.5*1=0.5
+
+total probability we get head once: 0.75 
+
+part of the probability that we get loaded coin 
+(0.5/0.75)=0.66666
+
+heads come out twice:
+
+0.5*0.5*0.5=0.125
+0.5*1*1=0.5
+
+total probability we get head twice=0.625
+
+part of the probability that we get loaded coin: 
+0.5/0.625=0.8
+
+= QUESTION 6 = 
+
+See unit 3.13c
+
+A independent of B: yes, B does not give information about A and vice-versa
+
+A independent of B given E: no, since knowing E will inform on A and B. "Explain away effect"
+
+A independent of B given G: no, since knowing G will inform on E and furthermore A and B
+
+A independent of B given F:  not on the path, so true
+
+A independent of C given G: yes, not on same path
+
+= QUESTION 7 =
+
+See unit 4.2
+
+P(+A)=0.5
+P(-A)=0.5 *
+
+P(+B|+A)=0.2
+P(-B|+A)=0.8 *
+P(+B|-A)=0.2
+P(-B|-A)=0.8 *
+
+P(+C|+A)=0.8
+P(-C|+A)=0.2 *
+P(+C|-A)=0.4
+P(-C|-A)=0.6 *
+
+== P(B|C) == 
+
+Given C+, what is the probability of A+, A-?
+
+P(A+|C+)= (P(C+|A+)*P(A+))/P(C+)
+P(A+|C+)= 0.8*0.5/(0.8*0.5+0.4*0.5)=2/3
+
+...so...
+
+P(A-|C+)=1-P(A+|C+)=1/3
+
+...we weight the two possibilities:
+
+2/3*P(+B|+A)+1/3*P(+B|-A)
+P(B+|C+) = 2/3*P(+B|+A)+1/3*P(+B|-A) = 2/3*0.2+1/3*0.2 = 0.2
+
+== P(C|B) == 
+
+Given B+, what is the probability of A+, A-?
+
+P(A+|B+)=(P(B+|A+)*P(A+))/P(B+)
+P(A+|B+)=0.2*0.5/(0.2*0.5+0.2*0.5)=0.5
+
+...SO...
+
+P(A-|B+)=0.5
+
+...we weight both...
+
+0.5*P(+C|+A)+0.5*P(+C|-A)=0.5*0.8+0.5*0.4=0.6
+
+= QUESTION 8 =
+
+see unit 5.24
+
+OLD titles: 3
+NEW titles: 2
+OLD words: 6
+NEW words: 4
+Top appears 2 times in OLD
+Top appears 1 times in NEW
+Total movies: 5
+
+P(OLD)=(3+1)/(5+2)=4/7
+3 out of 5 movies are OLD. We add one observation and the number of possibilities (2: OLD and NEW) to the denominator.
+
+P("TOP"|OLD)=(2+1)/(9+6)=3/15
+Given that a movie is OLD, the word TOP may appear two out of 9 times. We had one observation k to the numerator. Our dictionary (unique words) is [Top, Gun, Shy, People, Hat, Gear] of size 6 which we add to the denominator
+
+P(OLD|"TOP")=P("TOP"|OLD)*P(OLD)/P("TOP")
+P("TOP")=(3+1)/(10+6)
+
+P("TOP")=((3/15)*(4/7))/(4/16)
+
+= QUESTION 9 =
+
+Unit 5.51
+
+4 negatives + 3 positives = negative win
+
+= QUESTION 10 =
+
+see midterm_q10.m
+
+= QUESTION 11 =
+
+See unit 6.4
+
+Step #1: line splits in the middle (Voronoi graph), leaving C2 with a single point at the upper right while C1 moves between the two groups to the left. 
+
+Step #2: line in between C1, C2 still leaves C1 with the two groups at the left... C1, C2 are stable.
+
+
+QUESTION 12
+
+!A: true when A is false, false otherwise
+
+A || !A: true whether A is true or false
+
+(A && !A)=> ... : left side is always false, so the right side does not matter resulting in true
+
+(A=>B)&&(B=>C)&&(C=>A): if A, B and C are all true or all false, this will be true 
+
+(A=>B) && !(!A||B): both sides of && must be true. This means A is false or both A and B are true because of the left-side. 
+But... 
+if both A is false and B is true, right side is false. 
+if Both A and B are false, then still false. 
+...Always false.
+
+((A=>B)&&(B=>C))<=>(A=>C):
+
+A B C
+T T T = T
+T T F = T (false on both side)
+T F F = T (false on both side)
+F F F = T (true on both side)
+F T T = T (true on both sides)
+F F T =  T (true on both sides)
+F T F = F (false left, true right)
+T F T =  F (false left, true right)
+
+= QUESTION 13 =
+
+see unit 8.13
+
+[SA, AG]
+if AG is flooded, we are stuck
+loop!
+[SB, 2:(if stop: goto 2), BG] 
+stop light may turn off, but we don't know when
+loop!
+[SA, 2:(if flood: goto 2), AG] 
+same as [SA, AG]
+loop!
+[SA, 2:(if flood:[AD, DG] else: AG]
+we know maximum steps is SA, AD, DG
+[SB, 2:(if stop:[BS, SA, AD, DG]), BG]
+we know maximum steps is SB, BS, SA, AD, DG
+[SA, AD, DG]
+no risks of stopping, known good route
+
+= QUESTION 14 =
+
+see unit 9.25
+
+cost: -5
+terminal state: 100
+
+= QUESTION 15 =
+
+see unit 11.16
+
+P(A0)=(1+1)/(1+2)=2/3
+AAAAB
+
+Transitions out of A: 4
+Transitions out of B: 0
+
+A->A: 3
+A->B: 1
+B->A: 0
+B->B: 0
+
+P(A1|A0)=(3+1)/(4+2)=4/6
+P(A1|B0)=(0+1)/(0+2)=1/2
+
+
+
+

@@ -1,0 +1,15 @@
+P(At)=P(At-1)
+
+assuming x=P(At-1)
+
+P(At|At-1)*P(At-1)+P(At|Bt-1)*P(Bt-1)
+
+where P(Bt-1)=1-P(At-1)=1-x
+
+P(At|At-1)*x+P(At|Bt-1)*(1-x)
+
+x=0.8*x+0.5*(1-x)
+
+solve for x: 5/7
+
+and...P(B)=1-5/7

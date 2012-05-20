@@ -1,0 +1,21 @@
+= Stochastic problems =
+
+MDP (Markov Decision Processes):
+
+= Partially observable environment =
+
+POMDP (Partially Observable Markov Decision ProcesseS), belief space
+
+= Unknown Environment = 
+
+(don't know what the actions are)
+
+Reinforcement learning
+
+= Computations limitations =
+
+A*, h function, Monte Carlo
+
+= Handling adversaries =
+
+None yet...
